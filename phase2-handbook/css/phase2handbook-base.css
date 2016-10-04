@@ -1,0 +1,178 @@
+@charset "UTF-8";
+@import url(http://fonts.googleapis.com/css?family=Merriweather:900,700);
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans);
+@import url(http://fonts.googleapis.com/css?family=Droid+Serif);
+/**********Important notes about styling in fable**********/
+/****************GLOBALS*****************/
+/* line 7, ../sass/phase2handbook-base.scss */
+body {
+  font-family: "Droid Sans", Helvetica;
+  color: #465560;
+  background-color: #f1f2f2;
+}
+
+/* line 13, ../sass/phase2handbook-base.scss */
+a {
+  font-family: "Droid Serif", Georgia;
+  color: #465560;
+  font-size: 1.5em;
+  transition: .2s;
+}
+
+/* line 20, ../sass/phase2handbook-base.scss */
+a:hover, a:focus {
+  color: #f89729;
+  text-decoration: none;
+}
+
+/* line 25, ../sass/phase2handbook-base.scss */
+h1, h2 {
+  font-family: Merriweather, Georgia;
+  font-weight: 900;
+  color: #f89729;
+}
+
+/* line 31, ../sass/phase2handbook-base.scss */
+h1 {
+  font-size: 4em;
+}
+
+/* line 35, ../sass/phase2handbook-base.scss */
+h2 {
+  font-size: 3em;
+}
+
+/* line 39, ../sass/phase2handbook-base.scss */
+h3, h4 {
+  font-family: Merriweather, Georgia;
+  font-weight: 700;
+  color: #465560;
+}
+
+/* line 46, ../sass/phase2handbook-base.scss */
+.spine > .layout-block-component > .component-wrapper {
+  width: 100%;
+  padding-right: 10%;
+  padding-left: 10%;
+  padding-top: 2%;
+}
+
+/**************TITLE IMAGE***************/
+/* line 54, ../sass/phase2handbook-base.scss */
+.fbl-title-image-component figcaption {
+  background-color: rgba(0, 0, 0, 0.65);
+  margin-left: 100px;
+  width: 50%;
+}
+
+/* line 61, ../sass/phase2handbook-base.scss */
+.fbl-title-image-component .fbl-title-image--presentation {
+  background-color: #f1f2f2;
+}
+
+/* line 66, ../sass/phase2handbook-base.scss */
+.fbl-component--title {
+  color: white;
+}
+/* line 70, ../sass/phase2handbook-base.scss */
+.fbl-component--title .highlight {
+  color: #f89729;
+  font-size: 1.75em;
+}
+
+/****************PULL QUOTE******************/
+/* line 82, ../sass/phase2handbook-base.scss */
+.pull-quote-component .component-container {
+  text-shadow: none;
+  background: url(../img/janine_pattern.png) center center repeat fixed;
+}
+/* line 85, ../sass/phase2handbook-base.scss */
+.pull-quote-component .component-container p {
+  font-family: Merriweather, Georgia;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+/* line 93, ../sass/phase2handbook-base.scss */
+.pull-quote-component figcaption {
+  font-family: "Droid Serif", Georgia;
+  color: white;
+}
+
+/* line 99, ../sass/phase2handbook-base.scss */
+.pull-quote-component figcaption:before {
+  content: "—";
+}
+
+/*****TEXT BOX******/
+/* line 107, ../sass/phase2handbook-base.scss */
+.text-component .component-title {
+  border-bottom: none;
+}
+
+/* line 112, ../sass/phase2handbook-base.scss */
+.flow-component > .component-wrapper > .component-container > .layout-block-component h2 {
+  font-size: 3em;
+}
+
+/*********Image Grid********/
+/* line 118, ../sass/phase2handbook-base.scss */
+.subcomponent-container > * {
+  padding-top: 1em;
+}
+
+/* line 124, ../sass/phase2handbook-base.scss */
+.image-grid-element-2-component .fbl-component--caption {
+  text-align: center;
+}
+/* line 126, ../sass/phase2handbook-base.scss */
+.image-grid-element-2-component .fbl-component--caption p {
+  color: white;
+}
+/* line 130, ../sass/phase2handbook-base.scss */
+.image-grid-element-2-component .fbl-component--caption h2 {
+  color: #465560;
+}
+
+/* line 135, ../sass/phase2handbook-base.scss */
+.image-grid-element-2-wrapper {
+  margin: 1em;
+}
+
+/***********Pop Up**************/
+/* line 142, ../sass/phase2handbook-base.scss */
+.modal-content {
+  position: relative;
+  background-color: rgba(70, 85, 96, 0.9);
+  background-clip: padding-box;
+  border: none;
+  border-radius: 15px;
+  outline: 0;
+}
+
+/******Special Classes*******/
+/* line 153, ../sass/phase2handbook-base.scss */
+.background {
+  background-image: url("../img/flexibleschedule.svg");
+  background-repeat: no-repeat;
+  background-position: center right;
+  height: 678px;
+}
+
+/* line 159, ../sass/phase2handbook-base.scss */
+.gray-background {
+  background-color: #d1d2d4;
+}
+
+/* line 163, ../sass/phase2handbook-base.scss */
+.extra-space .spine > .layout-block-component > .component-wrapper {
+  padding-top: 15%;
+  padding-bottom: 15%;
+}
+
+/* line 170, ../sass/phase2handbook-base.scss */
+.center-text > .div.row.row-middle {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}

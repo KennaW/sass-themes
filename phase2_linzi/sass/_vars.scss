@@ -1,0 +1,20 @@
+/** Colors **/
+$p2-orange: rgb(255, 121, 0);
+$p2-black: rgb(40, 47, 54);
+
+$background-offwhite: #FFF;
+$background-gray: #666;
+$other-gray: #DDD;
+
+/** Fonts **/
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,600,400,400italic);
+$p2-font: 'Source Sans Pro', sans-serif;
+
+  //weights
+  $extra-light: 200;
+  $light: 300;
+  $regular: 400;
+  $semi-bold: 600;
+
+/** Images **/
+$logo-image: '../img/p2-logo.png';

@@ -1,0 +1,345 @@
+@charset "UTF-8";
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
+@import url(http://fonts.googleapis.com/css?family=Playfair+Display);
+/* line 2, ../sass/instyle-a-base.scss */
+body {
+  font-family: "freight-sans-pro", "Source Sans Pro", ariel, sans-serif !important;
+}
+
+/* line 6, ../sass/instyle-a-base.scss */
+h1, h2 {
+  font-family: "Austin Web", "Playfair Display", Gothic;
+  font-size: 4em;
+}
+
+/* line 11, ../sass/instyle-a-base.scss */
+a {
+  color: #d73659;
+  font-weight: bold;
+}
+
+/* line 20, ../sass/instyle-a-base.scss */
+.btn:focus {
+  outline: none;
+}
+
+/* line 24, ../sass/instyle-a-base.scss */
+.form-control:focus {
+  border-color: black;
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+/* line 32, ../sass/instyle-a-base.scss */
+.component-container {
+  padding: 0 0 0 0;
+}
+
+/**********TITLE IMAGE***********/
+/* line 38, ../sass/instyle-a-base.scss */
+h3.fbl-component--subtitle.title-image--subtitle {
+  background-color: #d73659;
+  float: left;
+  padding-left: 5px;
+  padding-right: 5px;
+  width: auto;
+}
+
+/* line 46, ../sass/instyle-a-base.scss */
+.fbl-component--caption.title-image-caption.caption {
+  text-shadow: 1px 1px DarkSlateGray;
+}
+
+/* line 50, ../sass/instyle-a-base.scss */
+.fbl-title-image-component figcaption {
+  background: none;
+}
+
+/*********REFERENCES*************/
+/* line 60, ../sass/instyle-a-base.scss */
+.reference-details {
+  border: none;
+  border-left: 1px solid Black;
+  padding-top: 30px;
+}
+
+/* line 66, ../sass/instyle-a-base.scss */
+.reference-details a:hover, .reference-details a:hover {
+  color: #d7133d;
+}
+
+/* line 70, ../sass/instyle-a-base.scss */
+.references-component .category-title {
+  text-transform: uppercase;
+}
+
+/* line 75, ../sass/instyle-a-base.scss */
+.side-menu .menu-item a {
+  text-transform: uppercase;
+  color: #d73659;
+}
+
+/* line 80, ../sass/instyle-a-base.scss */
+.side-menu .menu-item.active > a {
+  margin-left: -2px;
+  border-left: 2px solid black;
+}
+
+/* line 85, ../sass/instyle-a-base.scss */
+.side-menu {
+  border-left: 2px;
+}
+
+/* line 89, ../sass/instyle-a-base.scss */
+.side-menu .menu-item a:hover {
+  color: #d7133d;
+  margin-left: -2px;
+  border-left: 2px solid #e0e0e0;
+}
+
+/* line 95, ../sass/instyle-a-base.scss */
+.side-menu {
+  border: none;
+}
+
+/* line 100, ../sass/instyle-a-base.scss */
+.reference-details .gradient {
+  height: 0;
+}
+
+/****NEXT BUTTONS**/
+/* line 106, ../sass/instyle-a-base.scss */
+.slider-component .nav-wrapper .btn {
+  display: block;
+  height: 100px;
+  width: 83px;
+  position: absolute;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  border-radius: 0;
+  background-image: url("../img/arrows.png");
+  background-color: transparent;
+  transition: all 0s;
+  -webkit-transition: all 0s;
+  -o-transition: all 0s;
+  -moz-transition: all 0s;
+  -ms-transition: all 0s;
+  text-indent: -1000px;
+  overflow: hidden;
+  text-transform: uppercase;
+  z-index: 30;
+}
+
+/* line 129, ../sass/instyle-a-base.scss */
+.slider-component .btn-next:hover {
+  background-position: -108px -135px;
+}
+
+/* line 133, ../sass/instyle-a-base.scss */
+.slider-component .btn-prev:hover {
+  background-position: -11px -135px;
+}
+
+/**Share button**/
+/* line 139, ../sass/instyle-a-base.scss */
+.fa-share-square-o:before {
+  content: "↪";
+  color: darkgray;
+}
+
+/* line 144, ../sass/instyle-a-base.scss */
+.btn.btn-share {
+  color: black;
+  padding: 3px 8px;
+  line-height: 11px;
+  font-size: 10px;
+  border-radius: 8px;
+  background-color: transparent;
+}
+
+/**PULL QUOTE**/
+/* line 153, ../sass/instyle-a-base.scss */
+.quote {
+  font-family: "freight-sans-pro", "Source Sans Pro", ariel, sans-serif;
+  color: white;
+}
+
+/* line 158, ../sass/instyle-a-base.scss */
+.pull-quote-component blockquote p {
+  text-shadow: 1px 1px DarkSlateGray;
+}
+
+/* line 162, ../sass/instyle-a-base.scss */
+.pull-quote-component .component-container {
+  text-shadow: none;
+  background: none;
+}
+
+/* line 167, ../sass/instyle-a-base.scss */
+.quote-author, .quote-cite {
+  color: white;
+  background-color: #d73659;
+  font-family: "Austin Web", "Playfair Display", Gothic;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-bottom: 6px;
+}
+
+/* line 177, ../sass/instyle-a-base.scss */
+.pull-quote-component figcaption:before {
+  content: "";
+}
+
+/****LANDING GALLERY****/
+/* line 183, ../sass/instyle-a-base.scss */
+.gallery-slide-contents {
+  background: black;
+}
+
+/* line 189, ../sass/instyle-a-base.scss */
+.grid-background {
+  border-bottom: none;
+  box-shadow: none;
+}
+
+/* line 194, ../sass/instyle-a-base.scss */
+.gallery-item-click {
+  background-color: #d73659;
+  color: white;
+}
+
+/* line 200, ../sass/instyle-a-base.scss */
+.gallery-slide-contents .btn {
+  background-color: #d73659;
+  border-radius: 0;
+  border-color: #d73659;
+  text-shadow: none;
+  color: white;
+}
+
+/* line 207, ../sass/instyle-a-base.scss */
+.gallery-slide-contents .btn-default:active:focus {
+  outline: none;
+  color: white;
+  background-color: #d7133d;
+}
+
+/* line 214, ../sass/instyle-a-base.scss */
+.landing-header {
+  color: black;
+}
+
+/**GRID**/
+/* line 223, ../sass/instyle-a-base.scss */
+.grid-component .grid-header h2 {
+  font-size: 30px;
+  background-color: #d73659;
+  color: white;
+  font-family: "freight-sans-pro", "Source Sans Pro", ariel, sans-serif;
+  float: right;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 8px;
+}
+
+/* line 234, ../sass/instyle-a-base.scss */
+.grid-items-wrapper > .title {
+  font-family: "Austin Web", "Playfair Display", Gothic;
+  font-size: 90px;
+  line-height: 1em;
+  color: black;
+}
+
+/* line 242, ../sass/instyle-a-base.scss */
+.grid-items-wrapper {
+  background: #efefef;
+}
+
+/* line 247, ../sass/instyle-a-base.scss */
+.grid-items-wrapper .grid-item-text {
+  padding: 10px;
+  border-top: none;
+  box-shadow: none;
+}
+
+/* line 253, ../sass/instyle-a-base.scss */
+.grid-items-wrapper .grid-item-text:after {
+  display: block;
+  width: 30px;
+  height: 60px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  content: ' ';
+  background: white url("../img/arrow_red.png") no-repeat right center;
+}
+
+/**DIVIDER**/
+/* line 266, ../sass/instyle-a-base.scss */
+.divider-component .component-container h3 {
+  margin-right: 20px;
+  background-color: #d73659;
+  color: #fff;
+  font-size: 30px;
+  float: left;
+  padding: 6px 8px;
+}
+
+/**DATE LIST**/
+/* line 278, ../sass/instyle-a-base.scss */
+.date-item {
+  border-bottom: 1px solid #000;
+}
+
+/* line 282, ../sass/instyle-a-base.scss */
+.flow-component > .component-wrapper > .component-container > .layout-block-component p {
+  margin-bottom: 10px;
+}
+
+/***SLIDER***/
+/* line 296, ../sass/instyle-a-base.scss */
+.slider-item-wrapper.with-background-image .slider-item-container {
+  background: white;
+}
+
+/* line 301, ../sass/instyle-a-base.scss */
+.spine > .slider-component .slider-item-container, .slider-item-container {
+  width: 40%;
+}
+
+/* line 308, ../sass/instyle-a-base.scss */
+.slider-item-wrapper.with-background-image .slider-item-container h1, .slider-item-wrapper.with-background-image .slider-item-container h2, .slider-item-wrapper.with-background-image .slider-item-container h3, .slider-item-wrapper.with-background-image .slider-item-container p {
+  text-shadow: none;
+  color: #000 !important;
+  font-family: "freight-sans-pro", "Source Sans Pro", ariel, sans-serif;
+}
+
+/**TEXT BOX**/
+/* line 316, ../sass/instyle-a-base.scss */
+.flow-component > .component-wrapper > .component-container > .text-component > .component-container h1 {
+  text-align: center;
+}
+
+/* line 320, ../sass/instyle-a-base.scss */
+.flow-component > .component-wrapper > .component-container > .text-component > .component-container > .content {
+  padding: 0px 0px 0px;
+}
+
+/* line 326, ../sass/instyle-a-base.scss */
+hr {
+  border-top: 10px solid #000;
+  margin-top: -10px;
+  margin-bottom: 0px;
+}
+
+/* line 332, ../sass/instyle-a-base.scss */
+.flow-component > .component-wrapper > .component-container > .text-component {
+  padding: 0 0 10px;
+}
+
+/* line 336, ../sass/instyle-a-base.scss */
+.text-component .component-title {
+  border-bottom: 10px solid #000;
+}

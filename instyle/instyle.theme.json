@@ -1,0 +1,8 @@
+{
+  "name": "InStyle Magazine",
+  "machine-name": "instyle",
+  "css": [ "css/instyle-a-base.css", "css/instyle-b-tablet.css", "css/instyle-c-desktop.css" ],
+  "skins": {
+    "global": [ "reverse" ]
+  }
+}

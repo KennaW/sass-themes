@@ -1,0 +1,34 @@
+//Primary Colors
+$phase2-Orange: #f89729;
+$phase2-Gray: #465560;
+$magenta: #eb1c4f;
+$yellow: #fcbf56;
+
+//Accent Colors
+$green: #7ac143;
+$brown: #ae6f29;
+$blue: #0e7dc1;
+
+//Backgrounds
+$background-Gray: #f1f2f2;
+$background-Dark-Gray: #d1d2d4;
+
+//Background Image Path
+$moon-and-stars: "../img/flexibleschedule.svg";
+
+
+
+//Fonts
+@import url(http://fonts.googleapis.com/css?family=Merriweather:900,700);
+$header-one: Merriweather, Georgia;
+$header-two: Merriweather, Georgia;
+
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans);
+$copy: "Droid Sans", Helvetica;
+
+@import url(http://fonts.googleapis.com/css?family=Droid+Serif);
+$note: "Droid Serif", Georgia;
+
+//Font Weights
+$ultra-bold: 900;
+$bold: 700;

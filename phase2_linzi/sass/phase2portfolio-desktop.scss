@@ -1,0 +1,74 @@
+/**
+ * Desktop Breakpoint
+ */
+@media only screen and (min-width: 1025px) {
+  #logo {
+    background-size: 161px 50px;
+  }
+  .page-header {
+    height: 70px;
+    .nav-wrapper {
+      margin-left: 75px;
+      text-transform: uppercase;
+      a {
+        font-size: 15px;
+      }
+    }
+  }
+  .nav-wrapper .nav-pills > li {
+    padding-bottom: 33px;
+  }
+  body.interactive-view .nav-wrapper .nav-pills > li {
+    padding-bottom: 0;
+    &.active {
+      background: none !important;
+    }
+  }
+  .interactive-nav {
+    background: none;
+  }
+
+  .nav-pills > .active {
+    background: url('../img/header-menu-indicator.png') bottom center no-repeat;
+  }
+
+  /**
+   * Title Image
+   */
+
+  .title-image-component {
+    .title-image-title {
+      font-size: 60px;
+      line-height: 66px;
+    }
+    .title-image-caption {
+      p {
+        font-size: 1.2em;
+      }
+    }
+  }
+
+  .pull-quote-component {
+    blockquote {
+      min-height: 120px;
+      padding: 0 100px;
+    }
+    blockquote:before, blockquote:after {
+      background-image: url("../img/pullquote.svg");
+      background-size: cover;
+      height: 120px;
+      position: absolute;
+      width: 100px;
+      top: 100px;
+    }
+
+    blockquote:before {
+      left: 160px;
+    }
+    blockquote:after {
+      -webkit-transform: rotate(180deg);
+      transform: rotate(180deg);
+      right: 160px;
+    }
+  }
+}

@@ -1,0 +1,40 @@
+//Reds
+$red: #d7133d;
+$rose: #d73659;
+
+//Alert Yellow
+$yellow: yellow;
+
+
+//Tag Colors
+//Pink
+$tag-pink: #FF3399;
+
+//Teal
+$tag-teal: #009999;
+$mouse-over-Teal: #19939e;
+
+//Orange
+$tag-orange: #FF6633;
+
+
+//Fonts
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
+@import url(http://fonts.googleapis.com/css?family=Playfair+Display);
+
+//most text
+$font--primary: 'freight-sans-pro', 'Source Sans Pro', ariel, sans-serif;
+
+//Big headlines
+$font--secondary: 'Austin Web', 'Playfair Display', Gothic;
+
+
+//possible unicode for slider
+//ᐳ ⎨⎬ ⟨⟩ 〈〉
+
+//button image paths
+$red-arrow: "../img/arrow_red.png";
+$arrow-set: "../img/arrows.png";
+
+//share icon
+$share-icon: "↪";

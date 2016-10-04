@@ -1,0 +1,343 @@
+@import "_variables";
+body {
+  font-family: $font--primary !important;
+}
+
+h1, h2 {
+  font-family: $font--secondary;
+  font-size: 4em;
+}
+
+a {
+  color: $rose;
+  font-weight: bold;
+}
+
+
+
+
+//fighting with bootstrap defaults
+.btn:focus {
+  outline: none;
+}
+
+.form-control:focus {
+  border-color: black;
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+//remove all padding for a more 'cluttered' feeling
+.component-container {
+  padding: 0 0 0 0;
+}
+
+/**********TITLE IMAGE***********/
+//rose box
+h3.fbl-component--subtitle.title-image--subtitle {
+  background-color: $rose;
+  float: left;
+  padding-left: 5px;
+  padding-right: 5px;
+  width: auto;
+}
+
+.fbl-component--caption.title-image-caption.caption{
+  text-shadow: 1px 1px DarkSlateGray;
+}
+
+.fbl-title-image-component figcaption {
+  background: none;
+}
+
+
+/*********REFERENCES*************/
+
+//clear the border styles
+//style left border only
+//
+.reference-details {
+  border:none;
+  border-left: 1px solid Black;
+  padding-top: 30px;
+}
+
+.reference-details a:hover, .reference-details a:hover{
+  color: $red;
+}
+
+.references-component .category-title {
+  text-transform: uppercase;
+}
+
+//side menu changes
+.side-menu .menu-item a {
+  text-transform: uppercase;
+  color: $rose;
+}
+
+.side-menu .menu-item.active > a {
+  margin-left: -2px;
+  border-left: 2px solid black;
+}
+
+.side-menu{
+  border-left: 2px;
+}
+
+.side-menu .menu-item a:hover{
+  color: $red;
+  margin-left: -2px;
+  border-left: 2px solid #e0e0e0;
+}
+
+.side-menu{
+  border: none;
+}
+
+//remove gradient
+.reference-details .gradient{
+  height: 0;
+}
+
+
+/****NEXT BUTTONS**/
+.slider-component .nav-wrapper .btn {
+  display: block;
+  height: 100px;
+  width: 83px;
+  position: absolute;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  border-radius: 0;
+  background-image: url($arrow-set);
+  background-color: transparent;
+  transition: all 0s;
+  -webkit-transition: all 0s;
+  -o-transition: all 0s;
+  -moz-transition: all 0s;
+  -ms-transition: all 0s;
+  text-indent: -1000px;
+  overflow: hidden;
+  text-transform: uppercase;
+  z-index: 30;
+}
+//down shift to black arrow
+
+.slider-component .btn-next:hover {
+  background-position: -108px -135px;
+}
+
+.slider-component .btn-prev:hover {
+  background-position: -11px -135px;
+}
+
+/**Share button**/
+//little image before share
+.fa-share-square-o:before{
+  content: $share-icon;
+  color: darkgray;
+}
+//button style
+.btn.btn-share{
+  color: black;
+  padding: 3px 8px;
+  line-height: 11px;
+  font-size: 10px;
+  border-radius: 8px;
+  background-color: transparent;
+}
+/**PULL QUOTE**/
+.quote  {
+  font-family: $font--primary;
+  color: white;
+}
+
+.pull-quote-component blockquote p{
+  text-shadow: 1px 1px DarkSlateGray;
+}
+
+.pull-quote-component .component-container{
+  text-shadow: none;
+  background: none;
+  //background: rgba(255, 255, 255, .8);
+}
+.quote-author, .quote-cite{
+  color: white;
+  background-color: $rose;
+  font-family: $font--secondary;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-bottom: 6px;
+}
+
+//get rid of tilde
+.pull-quote-component figcaption:before {
+  content: "";
+}
+
+/****LANDING GALLERY****/
+//the contents of the gallery slide
+.gallery-slide-contents{
+background: black;
+}
+
+//landing gallery grid blocks
+//remove shadow and white border
+.grid-background {
+  border-bottom: none;
+  box-shadow: none;
+}
+
+.gallery-item-click {
+  background-color: $rose;
+  color: white;
+}
+
+//learn more button
+.gallery-slide-contents .btn {
+  background-color: $rose;
+  border-radius: 0;
+  border-color: $rose;
+  text-shadow: none;
+  color: white;
+}
+.gallery-slide-contents .btn-default:active:focus{
+    outline:none;
+    color: white;
+    background-color:$red;
+  }
+
+//Heading text color
+.landing-header {
+  color: black;
+}
+
+
+/**GRID**/
+//change the heading to the subheading
+//float the whole thing right
+//add padding -- "bottom" padding is elsewhere
+.grid-component .grid-header h2{
+  font-size: 30px;
+  background-color: $rose;
+  color: white;
+  font-family: $font--primary;
+  float: right;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 8px;
+}
+//change the subheading to the heading
+.grid-items-wrapper > .title {
+  font-family: $font--secondary;
+  font-size: 90px;
+  line-height: 1em;
+  color: black;
+}
+
+//gray background for grid items
+.grid-items-wrapper {
+  background: #efefef;
+}
+
+//remove top border from items
+.grid-items-wrapper .grid-item-text {
+  padding: 10px;
+  border-top: none;
+  box-shadow: none;
+}
+//grid arrow
+.grid-items-wrapper .grid-item-text:after {
+  display: block;
+  width: 30px;
+  height: 60px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  content: ' ';
+  background: white url($red-arrow) no-repeat right center;
+}
+
+
+/**DIVIDER**/
+.divider-component .component-container h3 {
+  margin-right: 20px;
+  background-color: $rose;
+  color: #fff;
+  font-size: 30px;
+  float: left;
+  padding: 6px 8px;
+}
+
+
+
+/**DATE LIST**/
+.date-item{
+  border-bottom: 1px solid #000;
+}
+
+.flow-component > .component-wrapper > .component-container > .layout-block-component p {
+  margin-bottom: 10px;
+}
+
+//.date-list {
+//  background-color: $rose;
+//  color: #FFF;
+//  margin-left: 50px;
+//  margin-right: 60px;
+//}
+
+/***SLIDER***/
+
+//change slider box to white
+.slider-item-wrapper.with-background-image .slider-item-container {
+  background: rgba(255, 255, 255, 1);
+}
+
+//change the size of the slider box
+.spine > .slider-component .slider-item-container, .slider-item-container{
+    width: 40%;
+  }
+
+
+//change slider box header and text to black
+//change slider box font
+.slider-item-wrapper.with-background-image .slider-item-container h1, .slider-item-wrapper.with-background-image .slider-item-container h2, .slider-item-wrapper.with-background-image .slider-item-container h3, .slider-item-wrapper.with-background-image .slider-item-container p {
+  text-shadow: none;
+  color: #000 !important;
+  font-family: $font--primary;
+}
+
+/**TEXT BOX**/
+//iconic title looks h1
+.flow-component > .component-wrapper > .component-container > .text-component > .component-container h1{
+  text-align: center;
+}
+
+.flow-component > .component-wrapper > .component-container > .text-component > .component-container > .content {
+  padding: 0px 0px 0px;
+}
+
+//adjusts hr bar to be large and black
+//moves the bar to underline h1 element
+hr{
+  border-top: 10px solid #000;
+  margin-top: -10px;
+  margin-bottom: 0px;
+}
+
+.flow-component > .component-wrapper > .component-container > .text-component{
+  padding: 0 0 10px;
+}
+
+.text-component .component-title{
+  border-bottom: 10px solid #000;
+}
+
+//change text box font
+//.flow-component > .component-wrapper > .component-container > .text-component > .component-container {
+//  font-family: $font--primary;
+//}

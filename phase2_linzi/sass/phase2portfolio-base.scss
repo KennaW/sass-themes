@@ -1,0 +1,243 @@
+@import "compass/css3/box-shadow";
+@import "compass/css3/images";
+@import "_vars";
+
+/***globals***/
+
+hr {
+  border-top: 1px solid $p2-orange;
+}
+
+//fonts
+body {
+  font-family: $p2-font;
+}
+
+p{
+  font-size: 12px;
+  font-weight: $regular;
+}
+
+p strong{
+  font-weight: $semi-bold;
+}
+
+.main-ui {
+  font-family: $p2-font;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: $p2-font;
+}
+
+h1{
+  font-weight: $extra-light;
+  font-size: 3em;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-weight: $light;
+  font-size: 1.8em;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-weight: $regular;
+  font-size: 1.13em;
+}
+
+
+//colors
+h1, h3 {
+  color: $p2-orange;
+}
+
+a:link, a:visited, a:hover, a:active {
+  color: $p2-orange;
+  font-weight: $regular;
+  font-style: italic;
+}
+
+body, h2{
+  color: $p2-black;
+}
+
+//backgrounds
+.interactive-container {
+  background: $background-offwhite;
+}
+
+/** text box **/
+.text-component > .component-container h2 {
+  font-weight: $light;
+  font-size: 1.8em;
+}
+
+
+/** Header **/
+#logo {
+  width: 200px;
+  background-image: url($logo-image);
+  background-size: 129px 40px;
+  box-shadow:none;
+}
+
+.interactive .page-header {
+  border-bottom: 1px solid $p2-black;
+}
+
+.page-header {
+  @include single-box-shadow($p2-black, 0);
+  border-bottom: 1px solid $p2-orange;
+  height: 50px;
+  .nav-wrapper {
+    top: 50px;
+    text-transform: uppercase;
+    li {
+      font-family: $p2-font;
+    }
+    a {
+      color: $p2-black;
+      font-size: 15px;
+      font-weight: 600;
+      font-style: normal;
+      background: $background-offwhite;
+    }
+  }
+}
+
+//change style of active tab
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus{
+  color: $background-offwhite;
+  background-color: $p2-black;
+  font-style: normal;
+}
+
+//change background color of header
+.interactive .page-header{
+  background: $background-offwhite;
+}
+
+.interactive-title {
+  display: none;
+}
+
+.interactive-nav {
+  background: $background-offwhite;
+}
+
+.nav-pills>.active>a, .nav-pills>.active>a:hover {
+  background: none;
+  color: $p2-orange;
+}
+
+.flow-component > .component-wrapper > .component-container > .text-component > .component-container h2 {
+  //font-weight: 200;
+  border: none;
+}
+
+.flow-component > .component-wrapper > .component-container > .call-to-action-component > .component-container h2, .slider-item-wrapper.with-background-image > .slider-item-container > .call-to-action-component > .component-container h2 {
+  font-weight: 200;
+  border: none;
+}
+
+.interactive .btn-primary {
+  @include background(linear-gradient(lighten($p2-orange, 7), $p2-orange));
+  &:hover {
+    background: $p2-orange;
+  }
+}
+
+/**
+ * Title Image
+ */
+
+.title-image-component {
+  .title-image-title {
+    font-weight: bold;
+  }
+  .title-image-caption {
+    margin-top: 1em !important;
+    font-family: $p2-font;
+    p {
+      font-size: 1.2em;
+    }
+  }
+}
+
+.fbl-title-image-component {
+  height: 80vh;
+}
+
+.fbl-title-image-component {
+  .fbl-component--title,
+  .fbl-component--subtitle,
+  .fbl-component--caption {
+    text-shadow: 0px 0px 4px #000;
+  }
+}
+
+
+
+.fbl-title-image-component .btn-video {
+  clear: both;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  color: $background-offwhite;
+  font-weight: bold;
+  background: rgba(0, 0, 0, 0.5);
+  display: inline-block;
+  padding: 0.5rem 2rem;
+  border: 1px solid $background-offwhite;
+  margin-top: 3rem;
+  float: left;
+}
+
+.fbl-component--preview-image {
+  object-fit: cover;
+  object-position: top center;
+  width: auto;
+}
+
+.fbl-title-image--layout-two-column {
+  .fbl-component--title {
+    font-family: $p2-font;
+    //font-weight: bold;
+    font-size: 6em;
+    line-height: 1em;
+  }
+  .fbl-component--subtitle {
+    font-size: 3em;
+    border-left: 3px solid $background-offwhite;
+    padding-left: 1rem;
+  }
+  figcaption {
+    background: none;
+  }
+}
+
+/**
+ * Pullquote
+ */
+
+.pull-quote-component figcaption {
+  font-size: 16px;
+}
+
+.pull-quote-component figcaption:before {
+  content: '';
+}
+
+.pull-quote-component.reversed figcaption {
+  .quote-author {
+
+  }
+  .quote-cite {
+    color: #BBB;
+  }
+}
+
+.pull-quote-component.reversed {
+  background-color: $background-gray;
+}

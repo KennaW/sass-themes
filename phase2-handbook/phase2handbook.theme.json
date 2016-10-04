@@ -1,0 +1,8 @@
+{
+  "name": "Phase2 Handbook",
+  "machine-name": "phase2handbook",
+  "css": [ "css/phase2handbook-base.css", "css/phase2handbook-tablet.css", "css/phase2handbook-desktop.css" ],
+  "skins": {
+    "global": [ "reverse" ]
+  }
+}

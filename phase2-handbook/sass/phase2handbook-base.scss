@@ -1,0 +1,174 @@
+@import "_variables";
+
+/**********Important notes about styling in fable**********/
+
+
+/****************GLOBALS*****************/
+body {
+  font-family: $copy;
+  color: $phase2-Gray;
+  background-color: $background-Gray;
+}
+
+a {
+  font-family: $note;
+  color: $phase2-Gray;
+  font-size: 1.5em;
+  transition:.2s;
+}
+
+a:hover, a:focus{
+    color: $phase2-Orange;
+    text-decoration: none;
+}
+
+h1, h2 {
+  font-family: $header-one;
+  font-weight: 900;
+  color: $phase2-Orange;
+}
+
+h1 {
+  font-size: 4em;
+}
+
+h2 {
+  font-size: 3em;
+}
+
+h3, h4 {
+  font-family: $header-two;
+  font-weight: 700;
+  color: $phase2-Gray;
+}
+
+//nudge the margins back a bit
+.spine > .layout-block-component > .component-wrapper{
+  width: 100%;
+  padding-right: 10%;
+  padding-left: 10%;
+  padding-top: 2%;
+}
+
+/**************TITLE IMAGE***************/
+.fbl-title-image-component figcaption{
+  background-color: rgba(0, 0, 0, 0.65);
+  margin-left: 100px;
+  width: 50%;
+}
+
+//gets rid of the awful black when the image doesn't fit right
+.fbl-title-image-component .fbl-title-image--presentation {
+  background-color: $background-Gray;
+}
+
+//special colors for title (white then orange)
+.fbl-component--title{
+  color: white;
+
+  //final word is controlled with 'highlight' class
+    .highlight {
+      color: $phase2-Orange;
+      font-size: 1.75em;
+      //Switch to em
+
+    }
+}
+
+
+/****************PULL QUOTE******************/
+
+//background and fonts for body
+.pull-quote-component .component-container{
+  text-shadow: none;
+  background: url(../img/janine_pattern.png) center center repeat fixed;
+    p {
+      font-family: $header-two;
+      font-weight: $bold;
+      font-size: 18px;
+    }
+}
+
+//font styles for "author"
+.pull-quote-component figcaption {
+  font-family: $note;
+  color: white;
+}
+
+//change the tilde into a dash
+.pull-quote-component figcaption:before {
+  content: "—";
+}
+
+
+/*****TEXT BOX******/
+
+//remove line under textbox title
+.text-component .component-title {
+  border-bottom: none;
+}
+
+//technically, this is for layout block, but it impacts text box the most
+.flow-component > .component-wrapper > .component-container > .layout-block-component h2 {
+  font-size: 3em;
+}
+
+
+/*********Image Grid********/
+.subcomponent-container > * {
+  padding-top: 1em;
+}
+//style the caption below each image (center, gray heading, white text)
+  //the gray heading is an h2 for accessibility
+  //The white text can be broken up with a <br> tag inside of source
+.image-grid-element-2-component .fbl-component--caption {
+  text-align: center;
+    p{
+      color: white;
+    }
+
+    h2 {
+      color: $phase2-Gray;
+    }
+}
+
+.image-grid-element-2-wrapper {
+  margin: 1em;
+}
+
+/***********Pop Up**************/
+//class: modal, modal-content
+
+.modal-content {
+  position: relative;
+  background-color: rgba($phase2-Gray, .9);
+  background-clip: padding-box;
+  border: none;
+  border-radius: 15px;
+  outline: 0;
+
+}
+
+/******Special Classes*******/
+.background {
+  background-image: url($moon-and-stars);
+  background-repeat: no-repeat;
+  background-position: center right;
+  height: 678px;
+}
+.gray-background{
+  background-color: $background-Dark-Gray;
+}
+
+.extra-space .spine > .layout-block-component > .component-wrapper {
+  padding-top: 15%;
+  padding-bottom: 15%;
+}
+
+
+//attempting to center stuff
+.center-text > .div.row.row-middle {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}

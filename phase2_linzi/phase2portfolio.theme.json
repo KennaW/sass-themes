@@ -1,0 +1,9 @@
+{
+  "name": "Phase2 Portfolio",
+  "machine-name": "phase2portfolio",
+  "favicon": "p2-fi.png",
+  "css": [ "css/phase2portfolio-base.css", "css/phase2portfolio-tablet.css", "css/phase2portfolio-desktop.css" ],
+  "skins": {
+    "global": [ "reverse" ]
+  }
+}
